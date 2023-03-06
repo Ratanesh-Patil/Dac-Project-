@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Spring]]></title><description><![CDATA[Level up your Java code and explore what Spring can do for you.]]></description><link>https://spring.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 04 Mar 2023 01:33:08 GMT</lastBuildDate><item><title><![CDATA[Spring Boot 3.0.4 available now]]></title><link>https://spring.io/blog/2023/03/03/spring-boot-3-0-4-available-now</link><guid isPermaLink="true">https://spring.io/blog/2023/03/03/spring-boot-3-0-4-available-now</guid><dc:creator><![CDATA[Jonatan Ivanov]]></dc:creator><pubDate>Fri, 03 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;On behalf of the team and everyone who has contributed, I&apos;m happy to announce that Spring Boot &lt;code&gt;3.0.4&lt;/code&gt; has been released and is now available from Maven Central.&lt;/p&gt;
+&lt;p&gt;The release was earlier than originally scheduled because of a &lt;a href=&quot;https://github.com/spring-projects/spring-framework/issues/30031&quot; title=&quot;#30031&quot;&gt;regression&lt;/a&gt; found in Spring Framework and it includes &lt;a href=&quot;https://github.com/spring-projects/spring-boot/releases/tag/v3.0.4&quot;&gt;19 bug fixes, documentation improvements, and dependency upgrades&lt;/a&gt;. Thanks to all those who have contributed with issue reports and pull requests.&lt;/p&gt;
+&lt;h3&gt;How can you help?&lt;/h3&gt;
+&lt;p&gt;If you&apos;re interested in helping out, check out the &lt;a href=&quot;https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution&quot;&gt;&quot;ideal for contribution&quot; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href=&quot;https://stackoverflow.com&quot;&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href=&quot;https://stackoverflow.com/tags/spring-boot&quot;&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href=&quot;https://gitter.im/spring-projects/spring-boot&quot;&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://spring.io/projects/spring-boot/&quot;&gt;Project Page&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-boot&quot;&gt;GitHub&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-boot/issues&quot;&gt;Issues&lt;/a&gt; | &lt;a href=&quot;https://docs.spring.io/spring-boot/docs/3.0.4/reference/html&quot;&gt;Documentation&lt;/a&gt; | &lt;a href=&quot;https://stackoverflow.com/questions/tagged/spring-boot&quot;&gt;Stack Overflow&lt;/a&gt; | &lt;a href=&quot;https://gitter.im/spring-projects/spring-boot&quot;&gt;Gitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Spring Data 2022.0.3 and 2021.2.9 released]]></title><link>https://spring.io/blog/2023/03/03/spring-data-2022-0-3-and-2021-2-9-released</link><guid isPermaLink="true">https://spring.io/blog/2023/03/03/spring-data-2022-0-3-and-2021-2-9-released</guid><dc:creator><![CDATA[Mark Paluch]]></dc:creator><pubDate>Fri, 03 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;On behalf of the team, I’m pleased to announce the availability of Spring Data &lt;code&gt;2022.0.3&lt;/code&gt; and &lt;code&gt;2021.2.9&lt;/code&gt; service releases. These releases ship with improvements, including fixes for regressions. Some of them were important enough that we decided to release this version early, outside of the usual schedule.&lt;/p&gt;
+&lt;p&gt;The upcoming Spring Boot &lt;code&gt;3.0.4&lt;/code&gt; release is going to pick up Spring Data &lt;code&gt;2022.0.3&lt;/code&gt; for your convenience. If you want to upgrade your Spring Boot &lt;code&gt;2.7.x&lt;/code&gt; application to use Spring Data &lt;code&gt;2021.2.9&lt;/code&gt;, then use the version property mechanism to specify the Spring Data BOM version:&lt;/p&gt;
+&lt;p&gt;Maven POM:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;#x3C;properties&gt;
+  &amp;#x3C;spring-data-bom.version&gt;2021.2.9&amp;#x3C;/spring-data-bom.version&gt;
+&amp;#x3C;/properties&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Gradle:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ext[&apos;spring-data-bom.version&apos;] = &apos;2021.2.9&apos;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;2022.0.3&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Spring Data Commons &lt;code&gt;3.0.3&lt;/code&gt; - &lt;a href=&quot;https://repo.spring.io/libs-release/org/springframework/data/spring-data-commons/3.0.3&quot;&gt;Artifacts&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/commons/docs/3.0.3/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/commons/docs/3.0.3/reference/html/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-commons/releases/tag/3.0.3&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data JPA &lt;code&gt;3.0.3&lt;/code&gt; - &lt;a href=&quot;https://repo.spring.io/libs-release/org/springframework/data/spring-data-jpa/3.0.3&quot;&gt;Artifacts&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/jpa/docs/3.0.3/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/jpa/docs/3.0.3/reference/html/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-jpa/releases/tag/3.0.3&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data MongoDB &lt;code&gt;4.0.3&lt;/code&gt; - &lt;a href=&quot;https://repo.spring.io/libs-release/org/springframework/data/spring-data-mongodb/4.0.3&quot;&gt;Artifacts&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/mongodb/docs/4.0.3/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/mongodb/docs/4.0.3/reference/html/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-mongodb/releases/tag/4.0.3&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data KeyValue &lt;code&gt;3.0.3&lt;/code&gt; - &lt;a href=&quot;https://repo.spring.io/libs-release/org/springframework/data/spring-data-keyvalue/3.0.3&quot;&gt;Artifacts&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/keyvalue/docs/3.0.3/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/keyvalue/docs/3.0.3/reference/html/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-keyvalue/releases/tag/3.0.3&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data for Apache Cassandra &lt;code&gt;4.0.3&lt;/code&gt; - &lt;a href=&quot;https://repo.spring.io/libs-release/org/springframework/data/spring-data-cassandra/4.0.3&quot;&gt;Artifacts&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/cassandra/docs/4.0.3/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/cassandra/docs/4.0.3/reference/html/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-cassandra/releases/tag/4.0.3&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data Neo4j &lt;code&gt;7.0.3&lt;/code&gt; - &lt;a href=&quot;https://repo.spring.io/libs-release/org/springframework/data/spring-data-neo4j/7.0.3&quot;&gt;Artifacts&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/neo4j/docs/7.0.3/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/neo4j/docs/7.0.3/reference/html/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-neo4j/releases/tag/7.0.3&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data LDAP &lt;code&gt;3.0.3&lt;/code&gt; - &lt;a href=&quot;https://repo.spring.io/libs-release/org/springframework/data/spring-data-ldap/3.0.3&quot;&gt;Artifacts&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/ldap/docs/3.0.3/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/ldap/docs/3.0.3/reference/html/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-ldap/releases/tag/3.0.3&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data REST &lt;code&gt;4.0.3&lt;/code&gt; - &lt;a href=&quot;https://repo.spring.io/libs-release/org/springframework/data/spring-data-rest-webmvc/4.0.3&quot;&gt;Artifacts&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/rest/docs/4.0.3/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/rest/docs/4.0.3/reference/html/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-rest/releases/tag/4.0.3&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data Redis &lt;code&gt;3.0.3&lt;/code&gt; - &lt;a href=&quot;https://repo.spring.io/libs-release/org/springframework/data/spring-data-redis/3.0.3&quot;&gt;Artifacts&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/redis/docs/3.0.3/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/redis/docs/3.0.3/reference/html/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-redis/releases/tag/3.0.3&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data Elasticsearch &lt;code&gt;5.0.3&lt;/code&gt; - &lt;a href=&quot;https://repo.spring.io/libs-release/org/springframework/data/spring-data-elasticsearch/5.0.3&quot;&gt;Artifacts&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/elasticsearch/docs/5.0.3/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/elasticsearch/docs/5.0.3/reference/html/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-elasticsearch/releases/tag/5.0.3&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data Couchbase &lt;code&gt;5.0.3&lt;/code&gt; - &lt;a href=&quot;https://repo.spring.io/libs-release/org/springframework/data/spring-data-couchbase/5.0.3&quot;&gt;Artifacts&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/couchbase/docs/5.0.3/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/couchbase/docs/5.0.3/reference/html/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-couchbase/releases/tag/5.0.3&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data Relational &lt;code&gt;3.0.3&lt;/code&gt; - &lt;a href=&quot;https://repo.spring.io/libs-release/org/springframework/data/spring-data-relational/3.0.3&quot;&gt;Artifacts&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/jdbc/docs/3.0.3/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/jdbc/docs/3.0.3/reference/html/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-relational/releases/tag/3.0.3&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;2021.2.9&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Spring Data Commons &lt;code&gt;2.7.9&lt;/code&gt; - &lt;a href=&quot;https://repo.spring.io/libs-release/org/springframework/data/spring-data-commons/2.7.9&quot;&gt;Artifacts&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/commons/docs/2.7.9/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/commons/docs/2.7.9/reference/html/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-commons/releases/tag/2.7.9&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data JDBC &lt;code&gt;2.4.9&lt;/code&gt; - &lt;a href=&quot;https://repo.spring.io/libs-release/org/springframework/data/spring-data-jdbc/2.4.9&quot;&gt;Artifacts&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/jdbc/docs/2.4.9/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/jdbc/docs/2.4.9/reference/html/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-relational/releases/tag/2.4.9&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data JPA &lt;code&gt;2.7.9&lt;/code&gt; - &lt;a href=&quot;https://repo.spring.io/libs-release/org/springframework/data/spring-data-jpa/2.7.9&quot;&gt;Artifacts&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/jpa/docs/2.7.9/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/jpa/docs/2.7.9/reference/html/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-jpa/releases/tag/2.7.9&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data MongoDB &lt;code&gt;3.4.9&lt;/code&gt; - &lt;a href=&quot;https://repo.spring.io/libs-release/org/springframework/data/spring-data-mongodb/3.4.9&quot;&gt;Artifacts&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/mongodb/docs/3.4.9/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/mongodb/docs/3.4.9/reference/html/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-mongodb/releases/tag/3.4.9&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data KeyValue &lt;code&gt;2.7.9&lt;/code&gt; - &lt;a href=&quot;https://repo.spring.io/libs-release/org/springframework/data/spring-data-keyvalue/2.7.9&quot;&gt;Artifacts&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/keyvalue/docs/2.7.9/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/keyvalue/docs/2.7.9/reference/html/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-keyvalue/releases/tag/2.7.9&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data for Apache Cassandra &lt;code&gt;3.4.9&lt;/code&gt; - &lt;a href=&quot;https://repo.spring.io/libs-release/org/springframework/data/spring-data-cassandra/3.4.9&quot;&gt;Artifacts&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/cassandra/docs/3.4.9/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/cassandra/docs/3.4.9/reference/html/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-cassandra/releases/tag/3.4.9&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data Neo4j &lt;code&gt;6.3.9&lt;/code&gt; - &lt;a href=&quot;https://repo.spring.io/libs-release/org/springframework/data/spring-data-neo4j/6.3.9&quot;&gt;Artifacts&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/neo4j/docs/6.3.9/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/neo4j/docs/6.3.9/reference/html/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-neo4j/releases/tag/6.3.9&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data R2DBC &lt;code&gt;1.5.9&lt;/code&gt; - &lt;a href=&quot;https://repo.spring.io/libs-release/org/springframework/data/spring-data-r2dbc/1.5.9&quot;&gt;Artifacts&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/r2dbc/docs/1.5.9/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/r2dbc/docs/1.5.9/reference/html/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-r2dbc/releases/tag/1.5.9&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data for Apache Geode &lt;code&gt;2.7.9&lt;/code&gt; - &lt;a href=&quot;https://repo.spring.io/libs-release/org/springframework/data/spring-data-geode/2.7.9&quot;&gt;Artifacts&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/geode/docs/2.7.9/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/geode/docs/2.7.9/reference/html/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-geode/releases/tag/2.7.9&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data LDAP &lt;code&gt;2.7.9&lt;/code&gt; - &lt;a href=&quot;https://repo.spring.io/libs-release/org/springframework/data/spring-data-ldap/2.7.9&quot;&gt;Artifacts&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/ldap/docs/2.7.9/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/ldap/docs/2.7.9/reference/html/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-ldap/releases/tag/2.7.9&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data Envers &lt;code&gt;2.7.9&lt;/code&gt; - &lt;a href=&quot;https://repo.spring.io/libs-release/org/springframework/data/spring-data-envers/2.7.9&quot;&gt;Artifacts&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/envers/docs/2.7.9/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/envers/docs/2.7.9/reference/html/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-envers/releases/tag/2.7.9&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data REST &lt;code&gt;3.7.9&lt;/code&gt; - &lt;a href=&quot;https://repo.spring.io/libs-release/org/springframework/data/spring-data-rest-webmvc/3.7.9&quot;&gt;Artifacts&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/rest/docs/3.7.9/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/rest/docs/3.7.9/reference/html/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-rest/releases/tag/3.7.9&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data Redis &lt;code&gt;2.7.9&lt;/code&gt; - &lt;a href=&quot;https://repo.spring.io/libs-release/org/springframework/data/spring-data-redis/2.7.9&quot;&gt;Artifacts&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/redis/docs/2.7.9/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/redis/docs/2.7.9/reference/html/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-redis/releases/tag/2.7.9&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data Elasticsearch &lt;code&gt;4.4.9&lt;/code&gt; - &lt;a href=&quot;https://repo.spring.io/libs-release/org/springframework/data/spring-data-elasticsearch/4.4.9&quot;&gt;Artifacts&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/elasticsearch/docs/4.4.9/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/elasticsearch/docs/4.4.9/reference/html/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-elasticsearch/releases/tag/4.4.9&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data Couchbase &lt;code&gt;4.4.9&lt;/code&gt; - &lt;a href=&quot;https://repo.spring.io/libs-release/org/springframework/data/spring-data-couchbase/4.4.9&quot;&gt;Artifacts&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/couchbase/docs/4.4.9/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/couchbase/docs/4.4.9/reference/html/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-couchbase/releases/tag/4.4.9&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[A Bootiful Podcast: Spring Cloud Stream and Spring Cloud Function lead Oleg Zhurakousky]]></title><link>https://spring.io/blog/2023/03/02/a-bootiful-podcast-spring-cloud-stream-and-spring-cloud-function-lead-oleg</link><guid isPermaLink="true">https://spring.io/blog/2023/03/02/a-bootiful-podcast-spring-cloud-stream-and-spring-cloud-function-lead-oleg</guid><dc:creator><![CDATA[Josh Long]]></dc:creator><pubDate>Thu, 02 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Hi Spring fans! Welcome to another installment of a bootiful podcast! in this installment, our pal &lt;a href=&quot;https://twitter.com/z_oleg&quot;&gt;Oleg Zhurakousky (@z_oleg)&lt;/a&gt;, lead of Spring Cloud Stream and Spring Cloud Function, rejoins the show to talk about the latest and greatest in stream processing.&lt;/p&gt;
+&lt;iframe title=&quot;Spring Cloud Stream lead Oleg Zhurakousky on Spring Cloud Stream, Spring Cloud Function, Integration and more&quot; allowtransparency=&quot;true&quot; height=&quot;150&quot; width=&quot;100%&quot; style=&quot;border: none; min-width: min(100%, 430px);&quot; scrolling=&quot;no&quot; data-name=&quot;pb-iframe-player&quot; src=&quot;https://www.podbean.com/player-v2/?i=pwszb-13a7131-pb&amp;from=pb6admin&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Arial&amp;skin=1&amp;font-color=&amp;logo_link=episode_page&amp;btn-skin=7&quot;&gt;&lt;/iframe&gt;</content:encoded></item><item><title><![CDATA[Spring Framework 6.0.6 available now]]></title><link>https://spring.io/blog/2023/03/02/spring-framework-6-0-6-available-now</link><guid isPermaLink="true">https://spring.io/blog/2023/03/02/spring-framework-6-0-6-available-now</guid><dc:creator><![CDATA[Brian Clozel]]></dc:creator><pubDate>Thu, 02 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce that Spring Framework &lt;code&gt;6.0.6&lt;/code&gt; is available now.&lt;/p&gt;
+&lt;p&gt;Spring Framework &lt;code&gt;6.0.6&lt;/code&gt; ships with &lt;a href=&quot;https://github.com/spring-projects/spring-framework/releases/tag/v6.0.6&quot;&gt;35 fixes and documentation improvements&lt;/a&gt;, including &lt;a href=&quot;https://github.com/spring-projects/spring-framework/issues?q=is%3Aclosed+milestone%3A6.0.6+label%3A%22type%3A+regression%22&quot;&gt;7 fixes for regressions&lt;/a&gt;. Some of them were important enough that we decided to release this version early, outside of the usual schedule.&lt;/p&gt;
+&lt;p&gt;This version will be shipped with Spring Boot 3.0.4, &lt;a href=&quot;https://calendar.spring.io/&quot;&gt;to be released tomorrow&lt;/a&gt;. Spring Framework 6.0.7 and 5.3.26 will be released in two weeks as planned initially.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://projects.spring.io/spring-framework/&quot;&gt;Project Page&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-framework&quot;&gt;GitHub&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-framework/issues&quot;&gt;Issues&lt;/a&gt; | &lt;a href=&quot;https://docs.spring.io/spring-framework/docs/6.0.6/reference/html/&quot;&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Spring Cloud Function for Azure Function]]></title><link>https://spring.io/blog/2023/03/02/spring-cloud-function-for-azure-function</link><guid isPermaLink="true">https://spring.io/blog/2023/03/02/spring-cloud-function-for-azure-function</guid><dc:creator><![CDATA[Christian Tzolov]]></dc:creator><pubDate>Thu, 02 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;What is the Spring Cloud Function?&lt;/h2&gt;
+&lt;p&gt;Spring Cloud Function is a SpringBoot-based framework allowing users to concentrate on their business logic by implementing them as Java Functions (i.e., Supplier, Function, Consumer). In turn the framework provides necessary abstraction to enable execution of these functions in various environments (e.g., REST, Streaming) as well as serverless environments such as AWS Lambda or Azure Functions, without having to worry about the underlying platform-specific details. This allows developers to focus on writing their business logic and let the framework handle the rest.&lt;/p&gt;
+&lt;p&gt;Spring Cloud Function uses the &lt;code&gt;java.util.function.Function/Supplier/Consumer&lt;/code&gt; Interfaces as building blocks for defining the structure of the function, including the input and output types.&lt;/p&gt;
+&lt;p&gt;Here&apos;s a simple example of a Spring Cloud Function that takes in a string and returns the string in uppercase:&lt;/p&gt;
+&lt;p&gt;First, we define the function interface:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public interface UppercaseFunction extends Function&amp;#x3C;String, String&gt; { }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next, we register the function as a bean:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;@Bean
+public UppercaseFunction uppercase() {
+    return value -&gt; value.toUpperCase();
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is a basic example of what you can do with Spring Cloud Function, you can use it for more complex use cases like connecting to a database, or consuming messages from a queue, and more.
+By itself it is just a piece of code implemented as a Java function and registered as Spring Bean. However, with Spring Cloud Function this function can become a handler of a REST request or a message handler triggered by a messaging system such as Kafka. The same function can also execute in serverless environments such as AWS Lambda or Microsoft Azure, all without changes to its implementation. And that is what this post is about, specifically integration of Spring Cloud Function with Microsoft Azure.&lt;/p&gt;
+&lt;h2&gt;What is Azure Java Function?&lt;/h2&gt;
+&lt;p&gt;The Azure Java Functions is a service that allows you to write Java-based serverless functions, running them on Azure infrastructure, with the ability to integrate with other Azure services and frameworks like Spring Boot.&lt;/p&gt;
+&lt;p&gt;The Azure Functions runtime takes care of scaling, security, and monitoring of your function app, and provides easy integration with other Azure services.
+You can read more about Azure Java Functions &lt;a href=&quot;https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-java?tabs=bash%2Cconsumption&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;Spring Cloud Function as Azure Function&lt;/h4&gt;
+&lt;p&gt;Spring Cloud Function provides an adapter to deploy and run Java functions as Azure Java Functions.&lt;/p&gt;
+&lt;p&gt;In order to use Spring Cloud Function with Azure Java Functions, you need to have the &lt;code&gt;spring-cloud-function-adapter-azure&lt;/code&gt; dependency on your classpath:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-xml&quot;&gt;&amp;#x3C;dependency&gt;
+    &amp;#x3C;groupId&gt;org.springframework.cloud&amp;#x3C;/groupId&gt;
+    &amp;#x3C;artifactId&gt;spring-cloud-function-adapter-azure&amp;#x3C;/artifactId&gt;
+    &amp;#x3C;version&gt;4.0.1&amp;#x3C;/version&gt;
+&amp;#x3C;/dependency&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It&apos;s important to note that using Spring Cloud Function enables  you to use simple Java Function programming model on Azure Java Functions, but the underlying infrastructure is still Azure Functions, you still need to manage the scaling, security, and monitoring of the Azure Function app, and the integration with other Azure services.&lt;/p&gt;
+&lt;p&gt;Let’s look at the example. For this we need to factor out the business logic (i.e., uppercasing the String) into a dedicated function called &lt;code&gt;uppercase&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;import java.util.function.Function;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+
+@SpringBootApplication
+public class HttpTriggerDemoApplication {
+
+   @Bean
+   public Function&amp;#x3C;String, String&gt; uppercase() {
+       return payload -&gt; {
+           String output = payload.toUpperCase();
+           return String.format(&quot;Input: %s&quot;, output);         
+       }
+   }
+
+	 @Bean
+	 public Function&amp;#x3C;String, String&gt; reverse() {
+		  return payload -&gt; new StringBuilder(payload).reverse().toString();
+	 }
+
+   public static void main(String[] args) {
+       SpringApplication.run(HttpTriggerDemoApplication.class, args);
+   }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This example uses the &lt;code&gt;@SpringBootApplication&lt;/code&gt; annotation to configure a Spring Boot application and the &lt;code&gt;@Bean&lt;/code&gt; annotation to define a function bean.
+Then to run this function on Azure Java Function, you need to create a new function app on Azure and configure it to use the Java runtime.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;import java.util.Optional;
+import java.util.function.Function;
+import com.microsoft.azure.functions.ExecutionContext;
+import com.microsoft.azure.functions.HttpMethod;
+import com.microsoft.azure.functions.HttpRequestMessage;
+import com.microsoft.azure.functions.annotation.AuthorizationLevel;
+import com.microsoft.azure.functions.annotation.FunctionName;
+import com.microsoft.azure.functions.annotation.HttpTrigger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.function.context.FunctionCatalog;
+import org.springframework.stereotype.Component;
+
+@Component
+public class AzureJavaExampleFunctionWithSpring {
+
+   /**
+    * Plain Spring bean (not Spring Cloud Functions!)
+    */
+   @Autowired
+   private Function&amp;#x3C;String, String&gt; uppercase;
+
+   /**
+    * The FunctionCatalog leverages the Spring Cloud Function framework.
+    */
+   @Autowired
+   private FunctionCatalog functionCatalog;
+
+   @FunctionName(&quot;bean&quot;)
+   public String plainBeans(
+           @HttpTrigger(name = &quot;req&quot;, methods = { HttpMethod.GET,
+                   HttpMethod.POST }, authLevel = AuthorizationLevel.ANONYMOUS) HttpRequestMessage&amp;#x3C;Optional&amp;#x3C;String&gt;&gt; request,
+           ExecutionContext context) {
+
+       // Use plain Spring Beans.
+       return uppercase.apply(request.getBody().orElse(&quot;Hello World&quot;));
+   }
+
+   @FunctionName(&quot;scf&quot;)
+   public String springCloudFunction(
+            @HttpTrigger(name = &quot;req&quot;, methods = { HttpMethod.GET,
+                    HttpMethod.POST }, authLevel = AuthorizationLevel.ANONYMOUS) HttpRequestMessage&amp;#x3C;Optional&amp;#x3C;String&gt;&gt; request,
+            ExecutionContext context) {
+
+        // Use SCF composition. 
+        Function composed = this.functionCatalog.lookup(&quot;reverse|uppercase&quot;);
+
+        return (String) composed.apply(request.getBody().orElse(&quot;Hello World&quot;));
+    }   
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;AzureJavaExampleFunctionWithSpring&lt;/code&gt; class is annotated with standard Azure annotations such as @FunctionName and &lt;code&gt;@HttpTrigger&lt;/code&gt; and internally it calls the &lt;code&gt;uppercase&lt;/code&gt; function defined in the &lt;code&gt;HttpTriggerDemoApplication&lt;/code&gt;.
+The &lt;code&gt;@Component&lt;/code&gt; annotation is what makes this Azure application also a Spring application, thus providing integration point with Spring Cloud Function and other Spring managed components through Spring dependency injections such as autowiring the &lt;code&gt;uppercase&lt;/code&gt; or &lt;code&gt;functionCatalog&lt;/code&gt; beans. Note that the &lt;code&gt;AzureJavaExampleFunctionWithSpring&lt;/code&gt; is a fully fledged Spring component, so you can autowire any Spring bean (not only functions), use property configurations and any other Spring Framework feature.&lt;/p&gt;
+&lt;p&gt;Note that the &lt;code&gt;plainBeans&lt;/code&gt; function uses plain Spring beans, while the &lt;code&gt;springCloudFunctin&lt;/code&gt; leverages the &lt;code&gt;FunctionCatalog&lt;/code&gt; to compose multiple Spring Cloud Functions.&lt;/p&gt;
+&lt;h4&gt;Deploying to Microsoft Azure&lt;/h4&gt;
+&lt;p&gt;You need to package your function as a fat jar, and then deploy it to your Azure Function App. Once deployed you can trigger your function either by HTTP request, events from Azure services like Event Hub, Service Bus, etc.&lt;/p&gt;
+&lt;p&gt;You can also use the maven plugin &lt;code&gt;com.microsoft.azure:azure-functions-maven-plugin&lt;/code&gt; to deploy the function to the azure function, the maven plugin can be configured by adding the following to your pom.xml:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-xml&quot;&gt;&amp;#x3C;plugin&gt;
+  &amp;#x3C;groupId&gt;com.microsoft.azure&amp;#x3C;/groupId&gt;
+  &amp;#x3C;artifactId&gt;azure-functions-maven-plugin&amp;#x3C;/artifactId&gt;
+  &amp;#x3C;version&gt;1.22.0&amp;#x3C;/version&gt;
+  &amp;#x3C;configuration&gt;
+      &amp;#x3C;appName&gt;scf-samples&amp;#x3C;/appName&gt;
+      &amp;#x3C;resourceGroup&gt;java-functions-group&amp;#x3C;/resourceGroup&gt;
+      &amp;#x3C;region&gt;westus&amp;#x3C;/region&gt;
+      &amp;#x3C;appServicePlanName&gt;java-functions-app-service-plan&amp;#x3C;/appServicePlanName&gt;
+      &amp;#x3C;pricingTier&gt;EP1&amp;#x3C;/pricingTier&gt;
+      &amp;#x3C;hostJson&gt;${project.basedir}/src/main/resources/host.json&amp;#x3C;/hostJson&gt;
+
+      &amp;#x3C;runtime&gt;
+          &amp;#x3C;os&gt;linux&amp;#x3C;/os&gt;
+          &amp;#x3C;javaVersion&gt;17&amp;#x3C;/javaVersion&gt;
+      &amp;#x3C;/runtime&gt;
+
+      &amp;#x3C;funcPort&gt;7072&amp;#x3C;/funcPort&gt;
+
+      &amp;#x3C;appSettings&gt;
+          &amp;#x3C;property&gt;
+              &amp;#x3C;name&gt;FUNCTIONS_EXTENSION_VERSION&amp;#x3C;/name&gt;
+              &amp;#x3C;value&gt;~4&amp;#x3C;/value&gt;
+          &amp;#x3C;/property&gt;
+      &amp;#x3C;/appSettings&gt;
+  &amp;#x3C;/configuration&gt;
+  &amp;#x3C;executions&gt;
+      &amp;#x3C;execution&gt;
+          &amp;#x3C;id&gt;package-functions&amp;#x3C;/id&gt;
+          &amp;#x3C;goals&gt;
+              &amp;#x3C;goal&gt;package&amp;#x3C;/goal&gt;
+          &amp;#x3C;/goals&gt;
+      &amp;#x3C;/execution&gt;
+  &amp;#x3C;/executions&gt;
+&amp;#x3C;/plugin&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will integrate your Azure Java Function with Spring Cloud Function and you can leverage the power of Spring Cloud Function like Function composition, POJO based development and many more.&lt;/p&gt;
+&lt;p&gt;For more information check the updated &lt;a href=&quot;https://docs.spring.io/spring-cloud-function/docs/4.0.2-SNAPSHOT/reference/html/azure.html#_microsoft_azure&quot;&gt;Azure adapter referecnce documentation&lt;/a&gt; and various examples can be found this &lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-function/tree/main/spring-cloud-function-samples/function-azure-di-samples&quot;&gt;samples&lt;/a&gt; folder&lt;/p&gt;
+&lt;h4&gt;Appendix1: Convert legacy code. From FunctinoInvoker to DI Azure Function integration&lt;/h4&gt;
+&lt;p&gt;Any existing application that uses FunctionInvoker can easily be converted into the new DI Azure Function integration style.&lt;/p&gt;
+&lt;p&gt;For example let&apos;s convert the following sample application that uses the legacy FunctionInvoker style.&lt;/p&gt;
+&lt;p&gt;The Spring Boot defines the boot application and a Spring Cloud Function called uppercase:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;import java.util.Map;
+import java.util.function.Function;
+import com.microsoft.azure.functions.ExecutionContext;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.function.json.JsonMapper;
+import org.springframework.context.annotation.Bean;
+import org.springframework.messaging.Message;
+
+@SpringBootApplication
+public class Config {
+
+   public static void main(String[] args) throws Exception {
+       SpringApplication.run(Config.class, args);
+   }
+
+   @Bean
+   public Function&amp;#x3C;Message&amp;#x3C;String&gt;, String&gt; uppercase(JsonMapper mapper) {
+       return message -&gt; {
+           String value = message.getPayload();
+           try {
+               Map&amp;#x3C;String, String&gt; map = mapper.fromJson(value, Map.class);
+
+               if(map != null)
+                   map.forEach((k, v) -&gt; map.put(k, v != null ? v.toUpperCase() : null));
+
+               return mapper.toString(map);
+           } catch (Exception e) {
+               e.printStackTrace();
+               return (&quot;Function error: - bad request&quot;);
+           }
+       };
+   }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and the FunctionInvoker that uses the uppercase function as an Azure Function would look like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;import com.microsoft.azure.functions.ExecutionContext;
+import com.microsoft.azure.functions.HttpMethod;
+import com.microsoft.azure.functions.HttpRequestMessage;
+import com.microsoft.azure.functions.annotation.AuthorizationLevel;
+import com.microsoft.azure.functions.annotation.FunctionName;
+import com.microsoft.azure.functions.annotation.HttpTrigger;
+import java.util.Optional;
+import org.springframework.cloud.function.adapter.azure.FunctionInvoker;
+import org.springframework.messaging.Message;
+import org.springframework.messaging.support.MessageBuilder;
+
+public class UppercaseHandler extends FunctionInvoker&amp;#x3C;Message&amp;#x3C;String&gt;, String&gt; {
+
+   @FunctionName(&quot;uppercase&quot;)
+   public String execute(
+       @HttpTrigger(
+           name = &quot;req&quot;,
+           methods = {HttpMethod.GET, HttpMethod.POST},
+           authLevel = AuthorizationLevel.ANONYMOUS) HttpRequestMessage&amp;#x3C;Optional&amp;#x3C;String&gt;&gt; request,
+       ExecutionContext context
+   ) {
+       context.getLogger().warning(&quot;Using Java (&quot; + System.getProperty(&quot;java.version&quot;) + &quot;)&quot;);
+       Message&amp;#x3C;String&gt; message = MessageBuilder.withPayload(request.getBody().get())
+           .copyHeaders(request.getHeaders()).build();
+       return handleRequest(message, context);
+   }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note that by convention the &lt;code&gt;@FunctionName&lt;/code&gt; must match the @Bean function name (in the Config class).&lt;/p&gt;
+&lt;p&gt;It is straightforward to refactor the UppercaseHandler class so that we replace the legacy FunctionInvoker with DI like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;import com.microsoft.azure.functions.ExecutionContext;
+import com.microsoft.azure.functions.HttpMethod;
+import com.microsoft.azure.functions.HttpRequestMessage;
+import com.microsoft.azure.functions.annotation.AuthorizationLevel;
+import com.microsoft.azure.functions.annotation.FunctionName;
+import com.microsoft.azure.functions.annotation.HttpTrigger;
+
+import java.util.Optional;
+
+import org.springframework.cloud.function.adapter.azure.FunctionInvoker;
+import org.springframework.messaging.Message;
+import org.springframework.messaging.support.MessageBuilder;
+
+@Component
+public class UppercaseHandler {
+
+   @Autowired
+   private Function&amp;#x3C;Message&amp;#x3C;String&gt;, String&gt; uppercase;
+
+   @FunctionName(&quot;uppercase&quot;)
+   public String execute(
+       @HttpTrigger(
+           name = &quot;req&quot;,
+           methods = {HttpMethod.GET, HttpMethod.POST},
+           authLevel = AuthorizationLevel.ANONYMOUS) HttpRequestMessage&amp;#x3C;Optional&amp;#x3C;String&gt;&gt; request,
+       ExecutionContext context
+   ) {
+       context.getLogger().warning(&quot;Using Java (&quot; + System.getProperty(&quot;java.version&quot;) + &quot;)&quot;);
+       Message&amp;#x3C;String&gt; message = MessageBuilder.withPayload(request.getBody().get())
+           .copyHeaders(request.getHeaders()).build();
+       return uppercase.apply(message);
+   }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Add the &lt;code&gt;@Component&lt;/code&gt; class annotation.&lt;/li&gt;
+&lt;li&gt;Remove the &lt;code&gt;FunctionInvoke&lt;/code&gt; class inheritance.&lt;/li&gt;
+&lt;li&gt;Autowire the required Function beans. Any Spring service and autowiring technique is supported.&lt;/li&gt;
+&lt;li&gt;Replace the &lt;code&gt;handleRequest&lt;/code&gt; method call with an explicit function call.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is all now you can build and deploy your application.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[This Week in Spring - February 28th, 2023]]></title><link>https://spring.io/blog/2023/02/28/this-week-in-spring-february-28th-2023</link><guid isPermaLink="true">https://spring.io/blog/2023/02/28/this-week-in-spring-february-28th-2023</guid><dc:creator><![CDATA[Josh Long]]></dc:creator><pubDate>Tue, 28 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Hi, Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! I&apos;m writing this installment from a hotel room in Dallas, Texas, in the USA. Last night I had the privilege of hanging out with some of my friends from the local Java scene. Today I meet with customers. It&apos;s going to be a nice few days indeed.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://spring.io/blog/2023/02/22/spring-authorization-server-1-0-1-and-0-4-1-available-now&quot;&gt;Spring Authorization Server 1.0.1 and 0.4.1 available now&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://spring.io/blog/2023/02/22/spring-authorization-server-1-1-0-m1-available-now&quot;&gt;Spring Authorization Server 1.1.0-M1 available now&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://spring.io/blog/2023/02/23/spring-boot-2-7-9-available-now&quot;&gt;Spring Boot 2.7.9 available now&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://spring.io/blog/2023/02/24/spring-boot-3-1-0-m1-available-now&quot;&gt;Spring Boot 3.1.0-M1 available now&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Did you see this amazing video on &lt;a href=&quot;https://www.youtube.com/watch?v=l4ixnX22Oiw&quot;&gt;Spring Framework 6: Infrastructure Themes&lt;/a&gt; by Spring cofounder and Spring Framework lead Juergen Hoeller? It&apos;s awesome!&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://spring.io/blog/2023/02/28/spring-shell-2-1-7-3-0-1-and-3-1-0-m1-are-now-available&quot;&gt;Spring Shell 2.1.7, 3.0.1 and 3.1.0-M1 are now available&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;I loved this blog by Apache Tomcat team&apos;s Mark Thomas on some of the implications of using Project Loom when building &lt;a href=&quot;https://spring.io/blog/2023/02/27/web-applications-and-project-loom&quot;&gt;web applications with Project Loom and Apache Tomcat&lt;/a&gt;; the Tl;DR is that traditional applications will benefit when using Project Loom. Hurray!&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://horstmann.com/unblog/2023-02-23/&quot;&gt;Cay Horstmann&apos;s Unblog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://gvart.dev/post/2023/02/native_spring_boot_aws_lambda/&quot;&gt;Deep dive into AWS Lambda using Spring Boot 3 and GraalVM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://feeds.feedblitz.com/~/728911364/0/baeldung~Download-a-Webpage-in-Java&quot;&gt;Download a Webpage in Java&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://feeds.feedblitz.com/~/728378579/0/baeldung~Introduction-to-Roaring-Bitmap&quot;&gt;Introduction to Roaring Bitmap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Are you using Testcontainers and Testcontainers Cloud? Did you know that you could install it locally with &lt;a href=&quot;https://brew.sh&quot;&gt;Homebrew&lt;/a&gt;?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;brew tap atomicjar/tap 
+brew install --cask testcontainers-cloud-desktop 
+&lt;/code&gt;&lt;/pre&gt;</content:encoded></item><item><title><![CDATA[Spring Shell 2.1.7, 3.0.1 and 3.1.0-M1 are now available]]></title><link>https://spring.io/blog/2023/02/28/spring-shell-2-1-7-3-0-1-and-3-1-0-m1-are-now-available</link><guid isPermaLink="true">https://spring.io/blog/2023/02/28/spring-shell-2-1-7-3-0-1-and-3-1-0-m1-are-now-available</guid><dc:creator><![CDATA[Janne Valkealahti]]></dc:creator><pubDate>Tue, 28 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;On behalf of the team and everyone who has contributed, I&apos;m happy to announce that Spring Shell &lt;code&gt;2.1.7&lt;/code&gt;, &lt;code&gt;3.0.1&lt;/code&gt; and &lt;code&gt;3.1.0-M1&lt;/code&gt; has been released and is now available from Maven Central and &lt;a href=&quot;https://repo.spring.io/milestone&quot;&gt;https://repo.spring.io/milestone&lt;/a&gt; respectively.&lt;/p&gt;
+&lt;p&gt;Please see the &lt;a href=&quot;https://github.com/spring-projects/spring-shell/releases/tag/v2.1.7&quot;&gt;release notes 2.1.7&lt;/a&gt;, &lt;a href=&quot;https://github.com/spring-projects/spring-shell/releases/tag/v3.0.1&quot;&gt;release notes 3.0.1&lt;/a&gt; and &lt;a href=&quot;https://github.com/spring-projects/spring-shell/releases/tag/v3.1.0-M1&quot;&gt;release notes 3.1.0-M1&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;Thanks to all those who have contributed with issue reports and pull requests.&lt;/p&gt;
+&lt;h3&gt;How can you help?&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://spring.io/projects/spring-shell/&quot;&gt;Project Page&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-shell&quot;&gt;GitHub&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-shell/issues&quot;&gt;Issues&lt;/a&gt; | &lt;a href=&quot;https://docs.spring.io/spring-shell/docs/3.0.1/docs/index.html&quot;&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Web applications and Project Loom]]></title><link>https://spring.io/blog/2023/02/27/web-applications-and-project-loom</link><guid isPermaLink="true">https://spring.io/blog/2023/02/27/web-applications-and-project-loom</guid><dc:creator><![CDATA[Mark Thomas]]></dc:creator><pubDate>Mon, 27 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Project Loom aims to bring &quot;easy-to-use, high-throughput, lightweight concurrency&quot; to the JRE. One feature introduced by Project Loom is virtual threads. In this blog post, we&apos;ll be exploring what virtual threads mean for web applications using some simple web applications deployed on Apache Tomcat.&lt;/p&gt;
+&lt;h2&gt;High-throughput / Lightweight&lt;/h2&gt;
+&lt;p&gt;The first experiment was to compare the overhead associated with using Tomcat&apos;s standard thread pool to the overhead associated with using a virtual thread (Loom) based executor. The test environment used is detailed at the end of this post. Performance was examined for different response sizes and request concurrency using average requests per second. The results are shown in the following graph.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//images.ctfassets.net/mnrwi97vnhts/3laT73zkpoy0BQCCiODEN7/bd12b9e25c9931cd844b8278854999e6/loom-results-01.png&quot; alt=&quot;loom-results-01&quot;&gt;&lt;/p&gt;
+&lt;p&gt;The results show that, generally, the overhead of creating a new virtual thread to process a request is less than the overhead of obtaining a platform thread from a thread pool.&lt;/p&gt;
+&lt;p&gt;An unexpected result seen in the thread pool tests was that, more noticeably for the smaller response bodies, 2 concurrent users resulted in fewer average requests per second than a single user. Investigation identified that the additional delay occurred between the task being passed to the Executor and the Executor calling the task&apos;s run() method. This difference reduced for 4 concurrent users and almost disappeared for 8 concurrent users.&lt;/p&gt;
+&lt;p&gt;At high levels of concurrency when there were more concurrent tasks than processor cores available, the virtual thread executor again showed increased performance. This was more noticeable in the tests using smaller response bodies.&lt;/p&gt;
+&lt;h2&gt;Easy to use&lt;/h2&gt;
+&lt;p&gt;The second experiment compared the performance obtained using Servlet asynchronous I/O with a standard thread pool to the performance obtained using simple blocking I/O with a virtual thread based executor. The potential benefit of virtual threads here is simplicity. A blocking read or write is a lot simpler to write than the equivalent Servlet asynchronous read or write - especially when error handling is considered.&lt;/p&gt;
+&lt;p&gt;Servlet asynchronous I/O is often used to access some external service where there is an appreciable delay on the response. The test web application simulated this in the Service class. The Servlet used with the virtual thread based executor accessed the service in a blocking style while the Servlet used with standard thread pool accessed the service using the Servlet asynchronous API. There wasn&apos;t any network IO involved, but that shouldn&apos;t have impacted the results.&lt;/p&gt;
+&lt;p&gt;The initial tests, unsurprisingly, showed no measurable difference between the blocking approach and the asynchronous approach as the timing was dominated by the 5 second delay. To explore the differences without the effects of the delay, the delay was reduced to zero and a similar set of tests to the throughput tests were executed. The results are shown in the following graph:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//images.ctfassets.net/mnrwi97vnhts/31R4sXyJqfeO0acHv7rC3a/66310020c620698ca77a55730a60a0a6/loom-results-02.png&quot; alt=&quot;loom-results-02&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Again we see that virtual threads are generally more performant, with the difference being most pronounced at low concurrency and when concurrency exceeds the number of processor cores available to the test.&lt;/p&gt;
+&lt;h2&gt;Analysis&lt;/h2&gt;
+&lt;p&gt;The differences between a virtual thread based executor and Tomcat&apos;s standard thread pool are not as stark as they may first appear from the graphs above. The tests were designed to examine the overhead associated with each approach and are not representative of real-world applications. In real-world applications, the differences shown in the tests are likely to be negligible compared to the time taken to complete a request.&lt;/p&gt;
+&lt;p&gt;The primary driver for the performance difference between Tomcat&apos;s standard thread pool and a virtual thread based executor is contention adding and removing tasks from the thread pool&apos;s queue. It is likely to be possible to reduce the contention in the standard thread pool queue, and improve throughput, by optimising the current implementations used by Tomcat.&lt;/p&gt;
+&lt;p&gt;A secondary factor impacting relative performance is context switching. This a likely explanation for the performance difference seen in the second experiment once concurrency exceeded the the number processor cores available as context switching for virtual threads is less expensive that for threads in the standard thread pool.&lt;/p&gt;
+&lt;h2&gt;Conclusions&lt;/h2&gt;
+&lt;p&gt;Using a virtual thread based executor is a viable alternative to Tomcat&apos;s standard thread pool. The benefits of switching to a virtual thread executor are marginal in terms of container overhead.&lt;/p&gt;
+&lt;p&gt;Web applications that experience blocking such as classic Spring MVC on Tomcat, and have not switched to the Servlet asynchronous API, reactive programming or other asynchronous APIs, should see some scalability improvements by switching to a virtual thread based executor. Depending on the web application, these improvements may be achievable with no changes to the web application code.&lt;/p&gt;
+&lt;p&gt;Web applications that have switched to using the Servlet asynchronous API, reactive programming or other asynchronous APIs are unlikely to observe measurable differences (positive or negative) by switching to a virtual thread based executor.&lt;/p&gt;
+&lt;p&gt;Longer term, the biggest benefit of virtual threads looks to be simpler application code. Some of the use cases that currently require the use of the Servlet asynchronous API, reactive programming or other asynchronous APIs will be able to be met using blocking IO and virtual threads. A caveat to this is that applications often need to make multiple calls to different external services. This is most efficiently done in parallel and while frameworks like &lt;a href=&quot;https://projectreactor.io/&quot;&gt;Project Reactor&lt;/a&gt; provide first class support for this, the JRE&apos;s equivalent solution for this (structured concurrency) is still in the incubator phase and only aims to coordinate multiple futures, but not to declare or compose them relative to each other in the most convenient way.&lt;/p&gt;
+&lt;p&gt;Finally, Project Loom is still in preview mode. It is too early to be considering using virtual threads in production but now is the time to include Project Loom and virtual threads in your planning so you are ready when virtual threads are generally available in the JRE.&lt;/p&gt;
+&lt;h2&gt;Test environment&lt;/h2&gt;
+&lt;p&gt;The test environment consisted of the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Apache Tomcat &lt;a href=&quot;https://github.com/apache/tomcat/tree/11.0.0-M1&quot;&gt;11.0.0-M1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&quot;https://github.com/apache/tomcat/blob/11.0.0-M1/modules/loom/src/main/java/org/apache/catalina/core/LoomExecutor.java&quot;&gt;Loom executor&lt;/a&gt; from Tomcat&apos;s Loom module&lt;/li&gt;
+&lt;li&gt;OpenJDK 21, early access, build 1&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/wg/wrk&quot;&gt;wrk 4.2.0&lt;/a&gt; (built from source)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Testing was performed on a fully updated Ubuntu 22.04.1 LTS machine with an Intel i7-6950X processor and 32 GB of RAM.&lt;/p&gt;
+&lt;p&gt;To maximise the visibility of differences between the tests, the following configuration changes were made from the default to minimise the common overhead:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;running the tests on a single machine using the loopback interface to minimise network overhead&lt;/li&gt;
+&lt;li&gt;disabling the access log as it is a source of significant disk I/O under high request volume&lt;/li&gt;
+&lt;li&gt;setting maxKeepAliveRequests to -1 to reduce the time spent establishing and tearing down TCP connections&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The &lt;a href=&quot;https://github.com/markt-asf/loom-blog&quot;&gt;test web application&lt;/a&gt; was also designed to minimise the common overhead and highlight the differences between the tests.&lt;/p&gt;
+&lt;p&gt;The server.xml file used was:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;#x3C;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&amp;#x3C;Server port=&quot;8005&quot; shutdown=&quot;SHUTDOWN&quot;&gt;
+  &amp;#x3C;Listener className=&quot;org.apache.catalina.startup.VersionLoggerListener&quot; /&gt;
+
+  &amp;#x3C;Service name=&quot;Catalina&quot;&gt;
+
+    &amp;#x3C;Executor
+        className=&quot;org.apache.catalina.core.LoomExecutor&quot;
+        name=&quot;loomExecutor&quot;
+        /&gt;
+
+    &amp;#x3C;Connector 
+        protocol=&quot;org.apache.coyote.http11.Http11NioProtocol&quot;
+        port=&quot;8080&quot;
+        maxKeepAliveRequests=&quot;-1&quot;
+        /&gt;
+
+    &amp;#x3C;Connector
+        executor=&quot;loomExecutor&quot;
+        protocol=&quot;org.apache.coyote.http11.Http11NioProtocol&quot;
+        port=&quot;8081&quot;
+        maxKeepAliveRequests=&quot;-1&quot;
+        /&gt;
+
+    &amp;#x3C;Engine name=&quot;Catalina&quot; defaultHost=&quot;localhost&quot;&gt;
+      &amp;#x3C;Host name=&quot;localhost&quot;  appBase=&quot;webapps&quot;
+            unpackWARs=&quot;true&quot; autoDeploy=&quot;true&quot;&gt;
+      &amp;#x3C;/Host&gt;
+    &amp;#x3C;/Engine&gt;
+  &amp;#x3C;/Service&gt;
+&amp;#x3C;/Server&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The setenv.sh file used was:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#!/bin/sh
+JAVA_OPTS=--enable-preview
+&lt;/code&gt;&lt;/pre&gt;</content:encoded></item><item><title><![CDATA[Spring Modulith 0.4.1 released]]></title><link>https://spring.io/blog/2023/02/24/spring-modulith-0-4-1-released</link><guid isPermaLink="true">https://spring.io/blog/2023/02/24/spring-modulith-0-4-1-released</guid><dc:creator><![CDATA[Oliver Drotbohm]]></dc:creator><pubDate>Fri, 24 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&quot;If it&apos;s fun, do it more often&quot; or so they say. Unfortunately, the &lt;a href=&quot;https://spring.io/blog/2023/02/24/spring-modulith-0-4-released&quot;&gt;just announced 0.4 release&lt;/a&gt; of Spring Modulith shipped a tiny glitch we could fix rather quickly, to immediately issue a 0.4.1 one. We were also able to sneak in an additional dependency upgrade to the just released jMolecules 2022.2.3.&lt;/p&gt;
+&lt;p&gt;Find a complete change log in the &lt;a href=&quot;https://github.com/spring-projects-experimental/spring-modulith/releases/tag/0.4.1&quot;&gt;GitHub release page&lt;/a&gt;. We are looking forward to your feedback in the &lt;a href=&quot;https://github.com/spring-projects-experimental/spring-modulith/discussions&quot;&gt;GitHub discussions&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Spring Cloud 2021.0.6 has been released]]></title><link>https://spring.io/blog/2023/02/24/spring-cloud-2021-0-6-has-been-released</link><guid isPermaLink="true">https://spring.io/blog/2023/02/24/spring-cloud-2021-0-6-has-been-released</guid><dc:creator><![CDATA[Oleg Zhurakousky]]></dc:creator><pubDate>Fri, 24 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;On behalf of the community, I am pleased to announce that the General Availability (RELEASE) of the &lt;a href=&quot;https://cloud.spring.io&quot;&gt;Spring Cloud 2021.0.6&lt;/a&gt; Release Train is available today. The release can be found in &lt;a href=&quot;https://repo1.maven.org/maven2/org/springframework/cloud/spring-cloud-dependencies/2021.0.6/&quot;&gt;Maven Central&lt;/a&gt;. You can check out the 2021.0.6 &lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-release/wiki/Spring-Cloud-2021.0-Release-Notes&quot;&gt;release notes for more information&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Notable Changes in the 2021.0.6 Release Train&lt;/h2&gt;
+&lt;p&gt;See the &lt;a href=&quot;https://github.com/orgs/spring-cloud/projects/102&quot;&gt;project page&lt;/a&gt; for all the issues and pull requests included in this release.&lt;/p&gt;
+&lt;h3&gt;Spring Cloud Commons&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add utility method to configure zone-preference load-balancing with user-provided zone (&lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-commons/pull/1174&quot;&gt;#1174&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Spring Cloud Netflix&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Allow setting timeouts for fetching instances (&lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-netflix/issues/4110&quot;&gt;#4110&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Spring Cloud Gateway&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed memory leak in CacheRequestBodyGatewayFilter(&lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-gateway/pull/2842&quot;&gt;2842&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Spring Cloud Kubernetes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Use SSL When secured annotation is true (&lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-kubernetes/issues/1141&quot;&gt;#1141&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Spring Cloud OpenFeign&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Allow configuring request timeout for Apache HttpClient (&lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-openfeign/issues/799&quot;&gt;#799&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Spring Cloud Stream&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Enhancements around custom Routing Functions to ensure they do not create output binding (similar to the provided one)&lt;/li&gt;
+&lt;li&gt;Consolidate core bean propagation between parent/child contexts in the case of multi-binder scenarios&lt;/li&gt;
+&lt;li&gt;Few bug fixes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Spring Cloud Function&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Several improvements and bug fixes primarily around AWS Lambda support&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The following modules were updated as part of 2021.0.6:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Module&lt;/th&gt;
+&lt;th&gt;Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Netflix&lt;/td&gt;
+&lt;td&gt;3.1.5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Config&lt;/td&gt;
+&lt;td&gt;3.1.6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Build&lt;/td&gt;
+&lt;td&gt;3.1.6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Sleuth&lt;/td&gt;
+&lt;td&gt;3.1.7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Gateway&lt;/td&gt;
+&lt;td&gt;3.1.6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Starter Build&lt;/td&gt;
+&lt;td&gt;2021.0.6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Consul&lt;/td&gt;
+&lt;td&gt;3.1.2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Contract&lt;/td&gt;
+&lt;td&gt;3.1.6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Vault&lt;/td&gt;
+&lt;td&gt;3.1.2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Kubernetes&lt;/td&gt;
+&lt;td&gt;2.1.6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Zookeeper&lt;/td&gt;
+&lt;td&gt;3.1.3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Task&lt;/td&gt;
+&lt;td&gt;2.4.6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Openfeign&lt;/td&gt;
+&lt;td&gt;3.1.6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Circuitbreaker&lt;/td&gt;
+&lt;td&gt;2.1.6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Stream&lt;/td&gt;
+&lt;td&gt;3.2.7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Commons&lt;/td&gt;
+&lt;td&gt;3.1.6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Function&lt;/td&gt;
+&lt;td&gt;3.2.9&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;As always, we welcome feedback on &lt;a href=&quot;https://github.com/spring-cloud/&quot;&gt;GitHub&lt;/a&gt;, on &lt;a href=&quot;https://gitter.im/spring-cloud/spring-cloud&quot;&gt;Gitter&lt;/a&gt;, on &lt;a href=&quot;https://stackoverflow.com/questions/tagged/spring-cloud&quot;&gt;Stack Overflow&lt;/a&gt;, and on &lt;a href=&quot;https://twitter.com/SpringCloud&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To get started with Maven with a BOM (dependency management only):&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-xml&quot;&gt;&amp;#x3C;dependencyManagement&gt;
+    &amp;#x3C;dependencies&gt;
+        &amp;#x3C;dependency&gt;
+            &amp;#x3C;groupId&gt;org.springframework.cloud&amp;#x3C;/groupId&gt;
+            &amp;#x3C;artifactId&gt;spring-cloud-dependencies&amp;#x3C;/artifactId&gt;
+            &amp;#x3C;version&gt;2021.0.6&amp;#x3C;/version&gt;
+            &amp;#x3C;type&gt;pom&amp;#x3C;/type&gt;
+            &amp;#x3C;scope&gt;import&amp;#x3C;/scope&gt;
+        &amp;#x3C;/dependency&gt;
+    &amp;#x3C;/dependencies&gt;
+&amp;#x3C;/dependencyManagement&gt;
+&amp;#x3C;dependencies&gt;
+    &amp;#x3C;dependency&gt;
+        &amp;#x3C;groupId&gt;org.springframework.cloud&amp;#x3C;/groupId&gt;
+        &amp;#x3C;artifactId&gt;spring-cloud-starter-config&amp;#x3C;/artifactId&gt;
+    &amp;#x3C;/dependency&gt;
+    &amp;#x3C;dependency&gt;
+        &amp;#x3C;groupId&gt;org.springframework.cloud&amp;#x3C;/groupId&gt;
+        &amp;#x3C;artifactId&gt;spring-cloud-starter-netflix-eureka-client&amp;#x3C;/artifactId&gt;
+    &amp;#x3C;/dependency&gt;
+    ...
+&amp;#x3C;/dependencies&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;or with Gradle:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-groovy&quot;&gt;plugins {
+  id &apos;java&apos;
+  id &apos;org.springframework.boot&apos; version &apos;2.7.9&apos;
+  id &apos;io.spring.dependency-management&apos; version &apos;1.0.15.RELEASE&apos;
+}
+
+group = &apos;com.example&apos;
+version = &apos;0.0.1-SNAPSHOT&apos;
+sourceCompatibility = &apos;8&apos;
+
+repositories {
+  mavenCentral()
+}
+
+ext {
+  set(&apos;springCloudVersion&apos;, &quot;2021.0.6&quot;)
+}
+
+dependencies {
+  implementation &apos;org.springframework.cloud:spring-cloud-starter-config&apos;
+  implementation &apos;org.springframework.cloud:spring-cloud-starter-netflix-eureka-client&apos;
+  //...
+}
+
+dependencyManagement {
+  imports {
+    mavenBom &quot;org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}&quot;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;</content:encoded></item></channel></rss>
