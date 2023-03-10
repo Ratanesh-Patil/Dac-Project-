@@ -24,7 +24,7 @@ const Contact = () =>{
         </div>
         <div className="col-md-8">
           <div id="map">
-            <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="330px" frameBorder={0} style={{border: 0}} allowFullScreen />
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.4084900187513!2d73.7556439148663!3d18.645656687336274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9f04635518b%3A0xea525f504f61f2a4!2sInstitute%20for%20Advanced%20Computing%20%26%20Software%20Development!5e0!3m2!1sen!2sin!4v1678443213054!5m2!1sen!2sin" width="100%" height="330px" frameBorder={0} style={{border: 0}} allowFullScreen />
           </div>
         </div>
         <div className="col-md-4">
@@ -32,20 +32,20 @@ const Contact = () =>{
             <h4>About our office <br></br>
                 Bike Rental System
             </h4>
-            <p>Address : IACSD Akurdi ,Pune 
-               Ratnesh Patil and Krushna Bairagi
-               phone : 7350402226
-               Email : ratnesh.k.patil@gmail.com
-                       krushnabairagi08@gmail.com
-               Looking for more information 
-               feel free to contact us on above details
+            <p>Address : IACSD Akurdi ,Pune <br />
+               Ratnesh Patil and Krushna Bairagi <br />
+               phone : 7350402226 <br />
+               Email : ratnesh.k.patil@gmail.com <br />
+                       krushnabairagi08@gmail.com <br />
+               Looking for more information <br />
+               feel free to contact us on above details 
             </p>
-            <ul className="social-icons">
+            {/* <ul className="social-icons">
               <li><a href="#"><i className="fa fa-facebook" /></a></li>
               <li><a href="#"><i className="fa fa-twitter" /></a></li>
               <li><a href="#"><i className="fa fa-linkedin" /></a></li>
               <li><a href="#"><i className="fa fa-behance" /></a></li>
-            </ul>
+            </ul> */}
           </div>
         </div>
       </div>

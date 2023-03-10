@@ -10,7 +10,7 @@ function Header(){
             <>            
             <h5 className="float-right mt-3">Welcome ! {state.loggedin.Username}</h5> </>:
             ''}
-            <h4 className="text-center pt-3">Welcome to Book Store</h4>
+            <h4 className="text-center pt-3">Welcome to Bike Booking</h4>
             <div className="clearfix"></div>
         </div>
     )

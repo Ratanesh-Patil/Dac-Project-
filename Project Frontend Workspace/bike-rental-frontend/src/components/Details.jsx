@@ -261,7 +261,7 @@ const Details = () => {
               <>
                 <h5 className='p-2 mt-4'>
                   Please <Link to='/login'>login</Link> or{' '}
-                  <Link to='/register'>register</Link> to booking car
+                  <Link to='/register'>register</Link> to book Bike
                 </h5>
               </>
             )}

@@ -18,7 +18,7 @@ function About(){
             <div className="row">
             <div className="col-md-12">
                 <div className="section-heading">
-                <h2>We are providing Bike on rents</h2>
+                <h2>We are providing Bike on rent</h2>
                 </div>
             </div>
             <div className="col-md-6">
@@ -35,7 +35,7 @@ function About(){
                     If you want an all-inclusive rental bike with no hidden costs, book at Bike Rental System
                     Our prices include fully comprehensive insurance, unlimited mileage, 24-hour emergency service and road tax!</p>
                 <ul className="social-icons">
-                    <li><a href="#"><i className="fa fa-facebook" /></a></li>
+                    <li><a href="https://www.instagram.com/ratnesh.patil"><i className="fa fa-facebook-f" /></a></li>
                     <li><a href="#"><i className="fa fa-twitter" /></a></li>
                     <li><a href="#"><i className="fa fa-linkedin" /></a></li>
                     <li><a href="#"><i className="fa fa-behance" /></a></li>

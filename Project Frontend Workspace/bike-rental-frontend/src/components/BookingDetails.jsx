@@ -77,7 +77,7 @@ export default function BookingDetails() {
                         <th>{data?.todate}</th>
                       </tr>
                       <tr>
-                        <th>Car Variant</th>
+                        <th>Bike Variant</th>
                         <th>{data?.variant?.title}</th>
                         <th>Price per Day</th>
                         <th>{data?.variant?.price}</th>
