@@ -14,7 +14,7 @@ import Bikes from './components/Bikes';
 import Products from './components/Products';
 import Details from './components/Details';
 import { ToastContainer } from 'react-toastify';
- import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css';
 import MyBookings from './components/MyBookings';
 import Bookings from './components/Bookings';
 import BookingDetails from './components/BookingDetails';

@@ -2,6 +2,8 @@ package com.bikerental.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,9 +25,18 @@ import com.bikerental.services.BookingService;
 public class BookingController {
 
 	@Autowired private BookingService bservice;
-	
+	@Autowired
+	JavaMailSender javaMailSender;
 	@PostMapping
-	public ResponseEntity<?> save(@RequestBody BookingDTO dto) {		
+	public ResponseEntity<?> save(@RequestBody BookingDTO dto) {	
+		SimpleMailMessage sm = new SimpleMailMessage();
+		sm.setFrom("patilrants@gmail.com"); 
+		sm.setTo(dto.getUserid());
+		sm.setSubject("Bike_Booking Successfull ");
+		sm.setText("Dear "+dto.getNameoncard()+",\n\n"
+				+ "\t Your booking is successful. Thank you for choosing Bike rental System  to book your favrite dream Bike. Enjoy the Ride and  Wishing you a great day...!!!. Your Booking Details are as below. Please keep this for the future reference.\n\n"
+				+ "Booking Dates        :"+dto.getFromdate()+"to"+dto.getTodate());
+		javaMailSender.send(sm);
 		bservice.saveBooking(dto);
 		return ResponseEntity.ok("Booked successfully");
 	}

@@ -1,3 +1,5 @@
+
+
 function About(){
     return (
         <>
@@ -34,12 +36,12 @@ function About(){
                     If you need a reliable and flexible bike rental company that offers comprehensive conditions,
                     If you want an all-inclusive rental bike with no hidden costs, book at Bike Rental System
                     Our prices include fully comprehensive insurance, unlimited mileage, 24-hour emergency service and road tax!</p>
-                <ul className="social-icons">
-                    <li><a href="https://www.instagram.com/ratnesh.patil"><i className="fa fa-facebook-f" /></a></li>
+                {/* <ul className="social-icons">
+                    <li><a href="https://www.instagram.com/ratnesh.patil"><i className="fa fa-facebook" /></a></li>
                     <li><a href="#"><i className="fa fa-twitter" /></a></li>
                     <li><a href="#"><i className="fa fa-linkedin" /></a></li>
                     <li><a href="#"><i className="fa fa-behance" /></a></li>
-                </ul>
+                </ul> */}
                 </div>
             </div>
             </div>

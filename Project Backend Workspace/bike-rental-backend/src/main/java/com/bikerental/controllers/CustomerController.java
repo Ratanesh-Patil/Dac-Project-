@@ -5,6 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -22,12 +24,24 @@ import com.bikerental.services.CustomerService;
 public class CustomerController {
 
 @Autowired CustomerService customerService;
-	
+
+@Autowired
+JavaMailSender javaMailSender;
 	@PostMapping
 	public ResponseEntity<?> save(@RequestBody Customer cust) {
 		if(customerService.verifyUserId(cust.getUserid())) {
 			return ResponseEntity.badRequest().body("Email already registered");
 		}
+		SimpleMailMessage sm = new SimpleMailMessage();
+		sm.setFrom("patilrants@gmail.com");//input the sender email Id or read it from properties file
+		sm.setTo(cust.getUserid());
+		sm.setSubject("Register Successful");
+		sm.setText("Dear "+cust.getUname() +",\n\n"
+				+ "\t Your Registation is successful. Thank you for for registering in Bike Rental System....!!!\n\n"
+				
+				
+				+ "regards, \n"+ "Team Bike Rental System");
+		javaMailSender.send(sm);
 		customerService.registerCustomer(cust);
 		return ResponseEntity.ok("Customer registered successfully");
 	}
